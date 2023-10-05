@@ -2,12 +2,12 @@ OUT_TGZ=rootfs.tar.gz
 
 DLR=curl
 DLR_FLAGS=-L
-BASE_URL=http://mirrors.edge.kernel.org/archlinux/iso/2022.10.01/archlinux-bootstrap-x86_64.tar.gz
-FRTCP_URL=https://github.com/yuk7/arch-prebuilt/releases/download/21082800/fakeroot-tcp-1.25.3-2-x86_64.pkg.tar.zst
-GLIBC_URL=https://github.com/yuk7/arch-prebuilt/releases/download/22100100/glibc-2.36-2-x86_64.pkg.tar.zst
-GLIBC_LINUX4_URL=https://github.com/yuk7/arch-prebuilt/releases/download/22100100/lib32-glibc-2.36-2-x86_64.pkg.tar.zst
-AL_KEYRING_URL=http://mirrors.edge.kernel.org/archlinux/core/os/x86_64/archlinux-keyring-20220927-1-any.pkg.tar.zst
-PAC_PKGS=archlinux-keyring base less nano sudo vim curl
+BASE_URL=https://geo.mirror.pkgbuild.com/iso/2023.09.01/archlinux-bootstrap-2023.09.01-x86_64.tar.gz
+FRTCP_URL=https://github.com/h4rldev/arch-prebuilt/releases/download/20231005/fakeroot-tcp-1.32.1-1-x86_64.pkg.tar.zst
+GLIBC_URL=https://github.com/h4rldev/arch-prebuilt/releases/download/20231005/glibc-2.38-7-x86_64.pkg.tar.zst
+GLIBC_LINUX4_URL=https://github.com/h4rldev/arch-prebuilt/releases/download/20231005/lib32-glibc-2.38-7-x86_64.pkg.tar.zst
+AL_KEYRING_URL=https://geo.mirror.pkgbuild.com/core/os/x86_64/archlinux-keyring-20230918-1-any.pkg.tar.zst
+PAC_PKGS=archlinux-keyring base less nano sudo neovim curl
 
 all: $(OUT_TGZ)
 
